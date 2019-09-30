@@ -15,3 +15,10 @@ p.then((data)=>{
 },(reason)=>{
     console.log(1,reason)
 })
+
+let p2 = new Promise((resolve,reject)=>{
+    resolve(3)
+})
+/* finally 特性 */
+/* p2.finally(()=>2).then(val=>{console.log(val)},reason=>{console.log(reason)})
+p2.finally(()=>3).then(val=>{console.log(val)},reason=>{console.log(reason)}) */
